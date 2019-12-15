@@ -56,3 +56,37 @@ h2 {
     font-size: 20px;
     font-family: 'Kaushan Script', cursive;
 }
+.input-group {
+    display: block;
+
+}
+.not_devoured {
+    position: absolute;
+    left: 75px;
+    color: white;
+    bottom: 30%;
+    font-family:'Satisfy', cursive;
+    font-size: 15px;
+}
+
+.devoured {
+    position: absolute;
+    right: 85px;
+    color: white;
+    bottom: 40%;
+    font-family: 'Satisfy', cursive;
+    font-size: 15px;
+}
+
+.devour-burger {
+    border-radius: 50px;
+    border: 2px solid  rgb(228, 40, 7);
+    background-color: rgb(228, 40, 7);
+    width: 150px;
+    height: 30px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+  }

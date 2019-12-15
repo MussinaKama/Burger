@@ -2,21 +2,14 @@
 $(function() {
   $(".devour-burger").on("click", function(event) {
     event.preventDefault();
+    console.log("clicked")
     var id = $(this).data("id");
-    var newDevoured = $(this).data("devoured");
-
-    var newDevouredState = {
-      devoured: newDevoured
-    };
-
     
     $.ajax("/burgers/" + id, {
       method: "PUT",
-      data: newDevouredState
     }).then(
-      function() {
-        console.log("changed to", newDevoured);
-      
+      function(data) {
+      console.log(data)
         location.reload();
       }
     );
