@@ -34,18 +34,15 @@ body {
     width: 150px;
     color: white;
     font-size: 20px;
+    transition: 0.3s;
+}
+
+#order-btn:hover{
+    transform: scale(1.2);
 }
 
 .form-group {
     display: inline-block;
-}
-
-h2 {
-    color: white;
-    font-family: 'Kaushan Script', cursive;
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 30px;
 }
 
 #br {
@@ -57,27 +54,45 @@ h2 {
     font-family: 'Kaushan Script', cursive;
 }
 .input-group {
-    display: block;
-
+    display: inline-block;
 }
+
 .not_devoured {
     position: absolute;
-    left: 75px;
+    left: 85px;
+    top: 80px;
     color: white;
-    bottom: 30%;
     font-family:'Satisfy', cursive;
     font-size: 15px;
 }
 
 .devoured {
     position: absolute;
+    top: 80px;
     right: 85px;
     color: white;
-    bottom: 40%;
     font-family: 'Satisfy', cursive;
     font-size: 15px;
 }
+h2 {
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+h3 {
+    color:  rgb(228, 40, 7);
+    border-bottom: 2px dashed rgb(228, 40, 7);
+}
 
+.input-group p {
+    font-size: 20px;
+}
+
+.list {
+    font-size: 20px;
+}
 .devour-burger {
     border-radius: 50px;
     border: 2px solid  rgb(228, 40, 7);

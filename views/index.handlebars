@@ -10,7 +10,7 @@
 	{{#unless this.devoured}}
   <li>
 			<form class="input-group">
-			<p>{{this.id}} {{this.burger_name}} </p>
+			<p>{{this.id}}. {{this.burger_name}} </p>
 				<button class="devour-burger" type="submit" data-id="{{this.id}}">OM NOM NOM!</button>
 			</form>
   </li>
@@ -26,7 +26,7 @@
 				{{#each burgers}}
 					{{#if this.devoured}}
 					<li>
-						<p class="lead">{{this.burger_name}} </p>
+						<p class="list">{{this.burger_name}} </p>
 					</li>
 					{{/if}}
 				{{/each}}
@@ -43,6 +43,6 @@
   <div class="form-group">
     <input type="hidden" name="devoured" value="true">
   </div>
-  <button type="submit" id="order-btn" class="f-group">Order Me!</button>
+  <button type="submit" id="order-btn" class="f-group">ORDER ME!</button>
 
 </form>
