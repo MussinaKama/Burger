@@ -1,0 +1,58 @@
+body {
+    background-image: url(../img/background.jpg);
+    background-size: 1540px 800px;
+    background-repeat: no-repeat;
+}
+#burger_picture {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#eat {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+.create-form {
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#order-btn {
+    border-radius: 50px;
+    border: 2px solid  white;
+    background-color: rgb(228, 40, 7);
+    height: 52px;
+    width: 150px;
+    color: white;
+    font-size: 20px;
+}
+
+.form-group {
+    display: inline-block;
+}
+
+h2 {
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#br {
+    height: 50px;
+    width: 350px;
+    border-radius: 50px;
+    border: 2px solid  rgb(228, 40, 7);
+    font-size: 20px;
+    font-family: 'Kaushan Script', cursive;
+}

@@ -1,4 +1,3 @@
-const util = require("util");
 const mysql = require("mysql");
 require('dotenv').config()
 
@@ -10,6 +9,12 @@ const connection = mysql.createConnection({
     database: "burgers_db"
   });
   
-  connection.connect();
-  connection.query = util.promisify(connection.query);
+  connection.connect(function(err) {
+    if (err) {
+      console.error("error connecting: " + err.stack);
+      return;
+    }
+    console.log("connected as id " + connection.threadId);
+  });
+  
   module.exports = connection;

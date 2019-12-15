@@ -1,0 +1,37 @@
+<div class="container" id="container">
+    <div class="jumbotron" id="header">
+    <h1 id="eat">Eat-Da-Burger!</h1>
+    <img src="/assets/img/burger.png" id="burger_picture">
+</div>
+
+<ul>
+  {{#each burgers}}
+      {{this.id}}. {{this.burger_name}}
+      {{#unless devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/unless}}
+    
+  {{/each}}
+</ul>
+
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Enter burger you want to order and click "Order Me!" button</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <input type="text" id="br" name="burger_name" autofocus>
+  </div>
+  <div class="form-group">
+    <input type="hidden" name="devoured" value="true">
+  </div>
+  <button type="submit" id="order-btn" class="f-group">Order Me!</button>
+
+</form>
