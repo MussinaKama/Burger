@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Burger-app",
   "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.17.1",
+    "util": "^0.12.1"
+  },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -16,13 +24,6 @@
   "bugs": {
     "url": "https://github.com/MussinaKama/Burger/issues"
   },
-  "homepage": "https://github.com/MussinaKama/Burger#readme",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-    "mysql": "^2.17.1",
-    "util": "^0.12.1"
-  }
+  "homepage": "https://github.com/MussinaKama/Burger#readme"
   
 }
